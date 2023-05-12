@@ -14,7 +14,7 @@ interface IWithPrivyProps {
 export const WithPrivy = ({ children }: IWithPrivyProps): JSX.Element => {
   if (typeof document !== "undefined") {
     return <PrivyProvider
-      appId={"clhhtxurv000uld08vecuzqrq"}
+      appId={"<change me>"}
       onSuccess={handleLogin}
       config={{
         loginMethods: ["email", "google", "twitter", "wallet"],
