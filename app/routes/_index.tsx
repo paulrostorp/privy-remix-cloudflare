@@ -1,4 +1,3 @@
-import { usePrivy } from "@privy-io/react-auth";
 import type { V2_MetaFunction } from "@remix-run/cloudflare";
 import { WithPrivy } from "~/WithPrivy";
 
@@ -7,8 +6,6 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export default function Index() {
-  // const privy = usePrivy()
-
   return (
     <WithPrivy>
       <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
@@ -38,7 +35,6 @@ export default function Index() {
             </a>
           </li>
         </ul>
-        {/* <button onClick={privy.login}>Log in</button>; */}
       </div>
     </WithPrivy>
   );
